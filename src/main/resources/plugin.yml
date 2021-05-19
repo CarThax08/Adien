@@ -1,0 +1,5 @@
+name: MunchBanGUI
+version: ${project.version}
+main: com.github.carthax08.munchbangui.Main
+authors: [ CarThax08 ]
+description: Ban GUI plugin.

@@ -1,0 +1,21 @@
+prefix: "&8[&cMunchBanGUI&8]&r"
+messages:
+  no_permission: "&cYou do not have the required permissions for that command!&r"
+  help:
+    - "&b+----------&6MunchBanGUI&b-----------+&r"
+    - "&b|    &6/punish reload - Reloads&b    |&r"
+    - "&b+------------------------------------+&r"
+  punishment_success_message: ""
+appeal_link: 'https://example.com/appeals'
+
+punishments:
+  #Valid Punishment Types are Ban, Mute, Kick, Temp_ban, and Temp_mute. Keep in mind that even if it is a temp-ban type, if you put "perm" anywhere that ban will be perm.
+  Unfair-Advantage:
+    type: 'TEMP_BAN'
+    lengths:
+      - '14'
+      - '30'
+      - '60'
+      - '90'
+      - 'perm'
+    reason: 'Cheating through the use of unfair game advantages.'

@@ -1,5 +1,6 @@
 package com.github.carthax08.munchbangui.events;
 
+import com.github.carthax08.munchbangui.Util;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -16,8 +17,11 @@ public class GuiClickEvent implements Listener {
             if(e.getCurrentItem().getType().equals(Material.SKULL_ITEM)){
                 SkullMeta meta = (SkullMeta) e.getCurrentItem().getItemMeta();
                 Player player = Bukkit.getPlayer(meta.getOwner());
+                e.getWhoClicked().openInventory(Util.getSecondGUI(player));
             }
             e.setCancelled(true);
+        }else if(e.getClickedInventory().getTitle().equals(ChatColor.RED + "Punishment?")){
+            //TODO: Second GUI Event
         }
     }
 
